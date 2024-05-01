@@ -1,1 +1,1 @@
-# JavaScript Learning Path.
+# JavaScript Learning Path. 🚀
