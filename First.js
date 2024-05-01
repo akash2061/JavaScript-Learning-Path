@@ -197,3 +197,8 @@ class Persons {
 const person1 = new Persons("John", "Pol", "15-6-2022");
 console.log(person1.fullname());
 
+x_null = null;
+x_undef = undefined;
+
+console.log(x_null)
+console.log(x_undef)
