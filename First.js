@@ -213,5 +213,3 @@ console.log(person1.fullname());
 
 x_null = null;
 x_undef = undefined;
-
-console.log(person1.fullname());
