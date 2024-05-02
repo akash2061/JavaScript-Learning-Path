@@ -115,16 +115,30 @@ for (let t of todo) {
 }
 
 // High order array methods:   forEach, map, filter
-
+console.log("\nFor Each: <id>");
 todo.forEach(function (t) {
     console.log(t.id);
 });
+console.log("\nFor Each: <full>");
+const foo = todo.forEach(function (t) {
+    console.log(t);
+});
+console.log();
+console.log("For Each Stored => " + foo);
 
+console.log("\nMap:");
 const next = todo.map(function (t) {
     return t.text;
 });
 
 console.log(next);
+console.log("\nMap Full:");
+const next1 = todo.map(function (t) {
+    return t;
+});
+
+console.log(next1);
+console.log("\nFilter:");
 
 const filteredTodo = todo.filter(function (t) {
     return t.completed;
