@@ -262,3 +262,11 @@ console.log("\nFor in:");
 for (let key in person){
     console.log("Key = ", key, "\t| Value = ", person[key]);
 }
+
+console.log("\nTemplate Literal:");
+let obj = {
+    item: "Pen",
+    price: 10,
+};
+let op = `Cost of ${obj.item} is ${obj.price}.`;
+console.log(op);
