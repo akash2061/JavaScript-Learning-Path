@@ -234,7 +234,7 @@ console.log("A = X (x is a string) ? ", a === x);
 let mode = "Dark";
 if (mode === "dark") {
     console.log("dark mode is on...!");
-} else if(mode === "Dark"){
+} else if (mode === "Dark") {
     console.log("Dark mode is on...!");
 } else {
     console.log("Foo...\nDark is dark...?");
@@ -250,3 +250,15 @@ console.log(result);
 // }else{
 //     console.log(num," is not a multiple of 3");
 // }
+
+let s = "JavaScript";
+console.log("\nIterator:");
+
+for (let i of s) {
+    console.log("I = ", i);
+}
+
+console.log("\nFor in:");
+for (let key in person){
+    console.log("Key = ", key, "\t| Value = ", person[key]);
+}
