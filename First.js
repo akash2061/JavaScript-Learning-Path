@@ -295,3 +295,19 @@ console.log("\nChar at 6:", s3.charAt(6));
 let usrname = "Morningstar";
 console.log("\nName:", usrname);
 console.log("User Name:", "@" + usrname + usrname.length);
+
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = ["10", 20, '30', 40];
+
+let arr3 = arr1.concat(arr2);
+console.log("Concat Array:", arr3);
+arr3 = arr3.slice(4, 7);
+console.log("Sliced Array:", arr3);
+arr4 = [1, 2, "3", 4, 5];
+console.log("\nArray:       ", arr4);
+arr4.splice(1,3,"2",3,"4");
+console.log("Splice Array:", arr4);
+
+console.log("\nArray-1:                ", arr1);
+arr1.splice(2,1);
+console.log("Removing 3 from Array-1:", arr1);
