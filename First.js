@@ -278,16 +278,20 @@ console.log("Output to Lower:", op.toLowerCase());
 let new_op = `      Cost of ${obj.item} is ${obj.price}.         `;
 console.log("Output Trim:", new_op.trim());
 
-console.log("Sliced:", op.slice(6,13));
+console.log("Sliced:", op.slice(6, 13));
 console.log("Sliced:", op.slice(8));
 
 let s1 = "Hello";
 let s2 = " Foo...";
 // let s3 = s1 + s2;
 let s3 = s1.concat(s2);
-console.log("\nConcat:",s3);
+console.log("\nConcat:", s3);
 
-console.log("Concat Replace:",s3.replace("o","O"));
-console.log("Concat ReplaceAll:",s3.replaceAll("o","O"));
+console.log("Concat Replace:", s3.replace("o", "O"));
+console.log("Concat ReplaceAll:", s3.replaceAll("o", "O"));
 
-console.log("\nChar at 6:",s3.charAt(6));
+console.log("\nChar at 6:", s3.charAt(6));
+
+let usrname = "Morningstar";
+console.log("\nName:", usrname);
+console.log("User Name:", "@" + usrname + usrname.length);
