@@ -10,6 +10,8 @@ console.log(a);
 const b = 30;
 console.log(b);
 
+console.log("a + b = ", a + b);
+
 console.log(typeof a);
 
 const x = "Hi";
@@ -216,3 +218,25 @@ x_undef = undefined;
 
 console.log(x_null);
 console.log(x_undef);
+
+c = 2;
+
+console.log("A = ", a);
+console.log("C = ", c);
+
+console.log("C % A = ", c % a);
+console.log("A ^ C = ", a ** c);
+
+console.log("A = C? ", a === c);
+console.log("A != C? ", a !== c);
+console.log("A = X (x is a string) ? ", a === x);
+
+let mode = "Dark";
+if (mode === "dark") {
+    console.log("dark mode is on...!");
+} else if(mode === "Dark"){
+    console.log("Dark mode is on...!");
+} else {
+    console.log("Foo...\nDark is dark...?");
+}
+
