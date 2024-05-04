@@ -240,3 +240,13 @@ if (mode === "dark") {
     console.log("Foo...\nDark is dark...?");
 }
 
+let result = a === c ? "Dark" : "Dark is a string";
+console.log(result);
+
+// alert("Hellooo......!");
+// let num = prompt("Enter a number: ");
+// if (num % 3 === 0) {
+//     console.log(num," is multiple of 3");
+// }else{
+//     console.log(num," is not a multiple of 3");
+// }
