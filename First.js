@@ -351,7 +351,7 @@ sarr.forEach((val, index, arr) => {
 });
 
 console.log("\nMap:");
-let map_arr = ["a", 10, "b", 20, "d", 30];
+let map_arr = ["a", 10, "b", 20, "c", 30];
 map_arr.map((val, i, arr) => {
     console.log(val, "-", i, "-", arr);
 });
@@ -365,3 +365,16 @@ let new_map = map_arr.map((val) => {
 });
 
 console.log("\nnew_map:", new_map);
+
+let char = map_arr.filter((val)=>{
+    if (typeof val === "string") {
+        return val;
+    }
+});
+console.log("\nFiltered Map:", char);
+let val = map_arr.filter((val)=>{
+    if (typeof val === "number") {
+        return val;
+    }
+});
+console.log("Filtered Map:", val);
