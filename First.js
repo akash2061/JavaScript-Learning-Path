@@ -305,9 +305,28 @@ arr3 = arr3.slice(4, 7);
 console.log("Sliced Array:", arr3);
 arr4 = [1, 2, "3", 4, 5];
 console.log("\nArray:       ", arr4);
-arr4.splice(1,3,"2",3,"4");
+arr4.splice(1, 3, "2", 3, "4");
 console.log("Splice Array:", arr4);
 
 console.log("\nArray-1:                ", arr1);
-arr1.splice(2,1);
+arr1.splice(2, 1);
 console.log("Removing 3 from Array-1:", arr1);
+
+console.log();
+let count = 1;
+function Foo() {
+    console.log(`${count} - Foo from function.`);
+    count++;
+}
+
+for (let l = 0; l < 5; l++) {
+    Foo();
+}
+
+console.log();
+function sum(f, g) {
+    // console.log("Hello Function!");
+    return f + g;
+}
+console.log("Sum of string & Num:", sum("foo-", 200));
+console.log("Sum of 2 numbers:", sum(300, 200));
