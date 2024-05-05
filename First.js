@@ -366,15 +366,22 @@ let new_map = map_arr.map((val) => {
 
 console.log("\nnew_map:", new_map);
 
-let char = map_arr.filter((val)=>{
+let char = map_arr.filter((val) => {
     if (typeof val === "string") {
         return val;
     }
 });
 console.log("\nFiltered Map:", char);
-let val = map_arr.filter((val)=>{
+let val = map_arr.filter((val) => {
     if (typeof val === "number") {
         return val;
     }
 });
 console.log("Filtered Map:", val);
+
+console.log("\nReduce:");
+let arr_mul = arr.reduce((pre, curr) => {
+    console.log(pre, "*", curr);
+    return pre * curr;
+});
+console.log("Reduce-Multiply:", arr_mul);
