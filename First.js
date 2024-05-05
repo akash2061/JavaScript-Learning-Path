@@ -341,10 +341,13 @@ console.log(arrow_sum('foo', 200));
 
 console.log("\nFor Each:");
 let arr = [1, 2, 3, 4, 5];
-arr.forEach(function val(value) {
-    console.log(value);
+arr.forEach(function val(value, v, arr) {
+    console.log(value, "-", v, "-", arr);
 });
 console.log();
-arr.forEach((val) => {
-    console.log(val);
+let sarr = ["a", "b", "c", "d", "e"];
+sarr.forEach((val, index, arr) => {
+    console.log(val, "-", index, "-", arr);
 });
+
+console.log("Map:");
