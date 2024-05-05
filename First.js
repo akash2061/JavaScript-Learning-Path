@@ -338,3 +338,13 @@ const arrow_sum = (f, g) => {
 };
 console.log(arrow_sum);
 console.log(arrow_sum('foo', 200));
+
+console.log("\nFor Each:");
+let arr = [1, 2, 3, 4, 5];
+arr.forEach(function val(value) {
+    console.log(value);
+});
+console.log();
+arr.forEach((val) => {
+    console.log(val);
+});
