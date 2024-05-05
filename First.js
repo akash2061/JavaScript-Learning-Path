@@ -350,4 +350,18 @@ sarr.forEach((val, index, arr) => {
     console.log(val, "-", index, "-", arr);
 });
 
-console.log("Map:");
+console.log("\nMap:");
+let map_arr = ["a", 10, "b", 20, "d", 30];
+map_arr.map((val, i, arr) => {
+    console.log(val, "-", i, "-", arr);
+});
+
+let new_map = map_arr.map((val) => {
+    if (typeof val === "string") {
+        return val;
+    } else {
+        return val * 2;
+    }
+});
+
+console.log("\nnew_map:", new_map);
