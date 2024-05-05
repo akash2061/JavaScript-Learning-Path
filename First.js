@@ -328,5 +328,13 @@ function sum(f, g) {
     // console.log("Hello Function!");
     return f + g;
 }
+console.log(sum);
 console.log("Sum of string & Num:", sum("foo-", 200));
 console.log("Sum of 2 numbers:", sum(300, 200));
+console.log();
+
+const arrow_sum = (f, g) => {
+    return f + g;
+}
+console.log(arrow_sum);
+console.log(arrow_sum('foo', 200));
