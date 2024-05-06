@@ -10,6 +10,8 @@ function clk() {
 function b_clk() {
     let foo = document.querySelector(".foo");
     foo.innerText = "Dom is DOM. But js is fun...";
+    let hide = document.querySelector("#hide");
+    hide.style.visibility = "visible";
 }
 var btw = document.getElementById("a_btw");
 btw.addEventListener("click", clk);
