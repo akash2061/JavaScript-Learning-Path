@@ -7,5 +7,11 @@ function clk() {
         alert(`${num} is not a multiple of 3`);
     }
 }
+function b_clk() {
+    let foo = document.querySelector(".foo");
+    foo.innerText = "Dom is DOM. But js is fun...";
+}
 var btw = document.getElementById("a_btw");
 btw.addEventListener("click", clk);
+var btw = document.getElementById("b_btw");
+btw.addEventListener("click", b_clk);
