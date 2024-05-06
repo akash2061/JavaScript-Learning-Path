@@ -2,6 +2,7 @@ body {
     background-color: rgb(23, 0, 44);
     color: azure;
     font-family: garamond;
+    text-align: center;
 }
 
 #a_btw {
@@ -10,19 +11,30 @@ body {
     background-color: cyan;
     border-radius: 5px;
 }
+
 #b_btw {
     height: 2rem;
     width: 5rem;
     background-color: cyan;
     border-radius: 5px;
 }
-#hide{
+
+#hide {
+    background-color: azure;
+    color: black;
+    border-radius: 3px;
     visibility: hidden;
     text-align: center;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #btw {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
 }
