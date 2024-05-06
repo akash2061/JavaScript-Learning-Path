@@ -12,6 +12,9 @@ function b_clk() {
     foo.innerText = "Dom is DOM. But js is fun...";
     let hide = document.querySelector("#hide");
     hide.style.visibility = "visible";
+    setTimeout(function () {
+        hide.style.visibility = "hidden";
+    }, 3000);
 }
 var btw = document.getElementById("a_btw");
 btw.addEventListener("click", clk);
