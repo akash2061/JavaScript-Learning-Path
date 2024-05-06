@@ -16,7 +16,14 @@ function b_clk() {
         hide.style.visibility = "hidden";
     }, 3000);
 }
+function new_btn() {
+    let btn = document.createElement("button");
+    btn.innerText = "Click Me!";
+    let div = document.querySelector("#con");
+    div.appendChild(btn);
+}
 var btw = document.getElementById("a_btw");
 btw.addEventListener("click", clk);
 var btw = document.getElementById("b_btw");
 btw.addEventListener("click", b_clk);
+new_btn();

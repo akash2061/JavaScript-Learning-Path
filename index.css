@@ -31,10 +31,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 #btw {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+#con {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    height: 5rem;
+    width: 10rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
