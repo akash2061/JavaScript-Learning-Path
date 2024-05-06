@@ -9,7 +9,7 @@ function clk() {
 }
 function b_clk() {
     let foo = document.querySelector(".foo");
-    foo.innerText = "Dom is DOM. But js is fun...";
+    foo.innerText = "<b>Dom is DOM. But js is fun...</b>";
 }
 var btw = document.getElementById("a_btw");
 btw.addEventListener("click", clk);
