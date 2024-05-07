@@ -1,4 +1,6 @@
 body {
+    margin: 0%;
+    padding: 0%;
     background-color: rgb(23, 0, 44);
     color: azure;
     font-family: garamond;
@@ -16,14 +18,9 @@ body {
     color: rgb(54, 0, 105);
 }
 
-#a_btw {
-    height: 2rem;
-    width: 5rem;
-    background-color: cyan;
-    border-radius: 5px;
-}
-
-#b_btw {
+#a_btw,
+#b_btw,
+#e_btw {
     height: 2rem;
     width: 5rem;
     background-color: cyan;
@@ -31,10 +28,9 @@ body {
 }
 
 #c_btw {
-    height: 40px;
-    width: 40px;
-    border: 50%;
-    ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     background-image: url("assets/dragon.png");
     background-size: cover;
     background-position: center;
@@ -44,13 +40,6 @@ body {
 
 #c_btw:active {
     transform: scale(0.75);
-}
-
-#e_btw {
-    height: 2rem;
-    width: 5rem;
-    background-color: cyan;
-    border-radius: 5px;
 }
 
 #hide {
@@ -68,17 +57,19 @@ body {
     z-index: 1;
 }
 
-#btw {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.light #hide {
+    background-color: rgb(23, 0, 44);
+    color: azure;
 }
 
+#btw,
 #con {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
+
 
 .box {
     border: 2px solid black;
