@@ -26,4 +26,9 @@ var btw = document.getElementById("a_btw");
 btw.addEventListener("click", clk);
 var btw = document.getElementById("b_btw");
 btw.addEventListener("click", b_clk);
-new_btn();
+// new_btn();
+
+let ev = document.querySelector("#e_btw");
+ev.addEventListener("click", () => {
+    alert("Event Handler... Button was Clicked.");
+});
