@@ -5,6 +5,16 @@ body {
     text-align: center;
 }
 
+.dark {
+    background-color: rgb(23, 0, 44);
+    color: azure;
+}
+
+.light {
+    background-color: azure;
+    color: rgb(54, 0, 105);
+}
+
 #a_btw {
     height: 2rem;
     width: 5rem;

@@ -34,8 +34,9 @@ ev.addEventListener("click", () => {
 });
 
 let modebtn = document.querySelector("#c_btw");
+let body = document.querySelector("body");
 let cmode = "light";
-modebtn.addEventListener("click", () => {
+/*modebtn.addEventListener("click", () => {
     if (cmode === "light") {
         cmode = "dark";
         document.querySelector("body").style.backgroundColor = "rgb(23, 0, 44)";
@@ -44,5 +45,17 @@ modebtn.addEventListener("click", () => {
         cmode = "light";
         document.querySelector("body").style.backgroundColor = "white";
         document.querySelector("body").style.color = "black";
+    }
+});
+*/
+modebtn.addEventListener("click", () => {
+    if (cmode === "light") {
+        cmode = "dark";
+        body.classList.add("dark");
+        body.classList.remove("light");
+    } else {
+        cmode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
     }
 });
