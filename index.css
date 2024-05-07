@@ -18,6 +18,23 @@ body {
     background-color: cyan;
     border-radius: 5px;
 }
+
+#c_btw {
+    height: 40px;
+    width: 40px;
+    border: 50%;
+    ;
+    background-image: url("assets/dragon.png");
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+}
+
+#c_btw:active {
+    transform: scale(0.75);
+}
+
 #e_btw {
     height: 2rem;
     width: 5rem;
@@ -49,9 +66,10 @@ body {
 #con {
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.box{
+
+.box {
     border: 2px solid black;
     border-radius: 3px;
     background-color: cornflowerblue;

@@ -32,3 +32,17 @@ let ev = document.querySelector("#e_btw");
 ev.addEventListener("click", () => {
     alert("Event Handler... Button was Clicked.");
 });
+
+let modebtn = document.querySelector("#c_btw");
+let cmode = "light";
+modebtn.addEventListener("click", () => {
+    if (cmode === "light") {
+        cmode = "dark";
+        document.querySelector("body").style.backgroundColor = "rgb(23, 0, 44)";
+        document.querySelector("body").style.color = "azure";
+    } else {
+        cmode = "light";
+        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.color = "black";
+    }
+});
