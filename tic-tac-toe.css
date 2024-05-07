@@ -2,4 +2,31 @@ body{
     background-color:rgb(39, 0, 51);
     margin: 0%;
     padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+#con{
+    margin-top: 5%;
+    background-color: aliceblue;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.sbox{
+    background-color: blueviolet;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
 }
