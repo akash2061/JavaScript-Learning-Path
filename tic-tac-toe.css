@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(65, 0, 117);
+    background-color:#86469C;
     margin: 0%;
     padding: 0%;
     display: flex;
@@ -10,7 +10,7 @@ body{
 
 #con{
     margin-top: 5%;
-    background-color: aliceblue;
+    background-color: #BC7FCD;
     height: 400px;
     width: 400px;
     display: flex;
@@ -19,7 +19,7 @@ body{
     border-radius: 5px;
 }
 #box{
-    background-color: aqua;
+    background-color: #FFCDEA;
     height: 350px;
     width: 350px;
     display: flex;
@@ -29,8 +29,9 @@ body{
     border-radius: 5px;
 }
 .sbox{
-    background-color: blueviolet;
+    background-color: #FB9AD1;
     height: 100px;
     width: 100px;
     border-radius: 5px;
+    border: 0;
 }
