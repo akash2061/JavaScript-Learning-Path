@@ -17,16 +17,16 @@ body {
     background-color: #A5A58D;
 }
 
-.dark #con {
-    background-color: #B7B7A4;
-}
-
 .dark #box {
     background-color: #FFE8D6;
 }
 
 .dark .sbox {
     background-color: #D4AC94;
+    color: azure;
+}
+.dark #rb{
+    background-color: #6B705C;
     color: azure;
 }
 
@@ -39,6 +39,10 @@ body {
     background-position: center;
     background-color: transparent;
     border: 0;
+}
+
+#c_btw:active {
+    transform: scale(0.75);
 }
 
 #mode {
@@ -62,13 +66,11 @@ h1 {
 
 #con {
     margin: 1rem auto;
-    background-color: #BC7FCD;
     height: 70vh;
     width: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
 }
 
 #box {
