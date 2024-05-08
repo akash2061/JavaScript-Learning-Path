@@ -1,5 +1,7 @@
 let moves = document.querySelectorAll(".sbox");
 let reset = document.querySelectorAll("#rb");
+let msgcon = document.querySelector(".msg-con");
+let msg = document.querySelector("#msg");
 
 let turn = true;
 let win = [
@@ -12,6 +14,12 @@ let win = [
     [3, 4, 5],
     [6, 7, 8]
 ];
+
+const showW = (win) => {
+    msg.innerText = `Congratulation, Winner is ${win}`;
+    msgcon.classList.remove("hide");
+}
+
 moves.forEach(move => {
     move.addEventListener("click", () => {
         // alert("Game is In Progress...!");
@@ -27,14 +35,14 @@ moves.forEach(move => {
     });
 });
 function checkwin() {
-    for (let p of win){
+    for (let p of win) {
         let p1 = moves[p[0]].innerText;
         let p2 = moves[p[1]].innerText;
         let p3 = moves[p[2]].innerText;
 
-        if(p1 != "" && p2 != "" && p3 != ""){
-            if(p1===p2 && p2===p3){
-                
+        if (p1 != "" && p2 != "" && p3 != "") {
+            if (p1 === p2 && p2 === p3) {
+                showW(p1);
             }
         }
     }
