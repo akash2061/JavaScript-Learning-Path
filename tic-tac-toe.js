@@ -1,5 +1,5 @@
 let moves = document.querySelectorAll(".sbox");
-let reset = document.querySelectorAll("#rb");
+let reset = document.querySelector("#rb");
 let msgcon = document.querySelector(".msg-con");
 let msg = document.querySelector("#msg");
 
@@ -19,8 +19,8 @@ const res = () => {
     turn = true;
     for (let b of moves) {
         b.disabled = false;
+        b.innerText = "";
     }
-    moves.innerText = "";
     msgcon.classList.add("hide");
 }
 
