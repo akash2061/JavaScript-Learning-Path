@@ -15,7 +15,21 @@ let win = [
     [6, 7, 8]
 ];
 
+const res = () => {
+    turn = true;
+    for (let b of moves) {
+        b.disabled = false;
+    }
+    moves.innerText = "";
+    msgcon.classList.add("hide");
+}
+
+reset.addEventListener("click", res);
+
 const showW = (win) => {
+    for (let b of moves) {
+        b.disabled = true;
+    }
     msg.innerText = `Congratulation, Winner is ${win}`;
     msgcon.classList.remove("hide");
 }
@@ -34,6 +48,7 @@ moves.forEach(move => {
         checkwin();
     });
 });
+
 function checkwin() {
     for (let p of win) {
         let p1 = moves[p[0]].innerText;
@@ -47,6 +62,7 @@ function checkwin() {
         }
     }
 };
+
 let modebtn = document.querySelector("#c_btw");
 let body = document.querySelector("body");
 let cmode = "light";
