@@ -89,8 +89,8 @@ h1 {
 .sbox {
     background-color: #FB9AD1;
     font-size: 8vmin;
-    height: 18vmin;
-    width: 18vmin;
+    height: 16vmin;
+    width: 16vmin;
     border-radius: 1rem;
     border: 0;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
