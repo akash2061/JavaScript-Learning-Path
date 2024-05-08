@@ -1,16 +1,50 @@
-body{
-    background-color:#86469C;
+body {
+    background-color: #86469C;
     margin: 0%;
     padding: 0%;
     height: 100vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-#header{
+.dark {
+    background-color: #6B705C;
+}
+
+.dark #header {
+    background-color: #A5A58D;
+}
+
+.dark #con {
+    background-color: #B7B7A4;
+}
+
+.dark #box {
+    background-color: #FFE8D6;
+}
+
+.dark .sbox {
+    background-color: #D4AC94;
+}
+
+#c_btw {
+    margin-left: 10%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url("assets/dragon.png");
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+}
+
+#header {
     background-color: #BC7FCD;
     display: flex;
     justify-content: center;
 }
-#con{
+
+#con {
     margin: 5px auto;
     background-color: #BC7FCD;
     height: 400px;
@@ -20,17 +54,19 @@ body{
     align-items: center;
     border-radius: 5px;
 }
-#box{
+
+#box {
     background-color: #FFCDEA;
     height: 370px;
     width: 370px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 5px;
 }
-.sbox{
+
+.sbox {
     background-color: #FB9AD1;
     height: 100px;
     width: 100px;
