@@ -27,7 +27,6 @@ body {
 }
 
 #c_btw {
-    margin-left: 10%;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -38,10 +37,23 @@ body {
     border: 0;
 }
 
+#mode {
+    display: flex;
+    align-items: center;
+}
+
 #header {
     background-color: #BC7FCD;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
 }
 
 #con {
