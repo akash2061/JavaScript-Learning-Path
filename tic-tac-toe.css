@@ -3,11 +3,14 @@ body {
     margin: 0%;
     padding: 0%;
     height: 100vh;
+    text-align: center;
     transition: background-color 0.5s ease, color 0.5s ease;
+    color: black;
 }
 
 .dark {
     background-color: #6B705C;
+    color: azure;
 }
 
 .dark #header {
@@ -24,6 +27,7 @@ body {
 
 .dark .sbox {
     background-color: #D4AC94;
+    color: azure;
 }
 
 #c_btw {
@@ -57,31 +61,55 @@ h1 {
 }
 
 #con {
-    margin: 5px auto;
+    margin: 1rem auto;
     background-color: #BC7FCD;
-    height: 400px;
-    width: 400px;
+    height: 70vh;
+    width: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 
 #box {
     background-color: #FFCDEA;
-    height: 370px;
-    width: 370px;
+    height: 60vmin;
+    width: 60vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 
 .sbox {
     background-color: #FB9AD1;
-    height: 100px;
-    width: 100px;
-    border-radius: 5px;
+    font-size: 8vmin;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
     border: 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+#rb {
+    background-color: #FB9AD1;
+    padding: 1rem;
+    font-size: 1.5vmin;
+    border-radius: 1rem;
+    border: 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+#msg {
+    font-size: 4vmin;
+}
+
+.msg-con {
+    height: 25vmin;
+}
+
+.hide {
+    display: none;
 }

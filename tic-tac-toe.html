@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="tic-tac-toe.css">
 </head>
 <body>
-    <dix id="header">
-        <h1>Welocme to my Game.</h1>
+    <div id="header">
+        <h1>Welcome to my Game: Tic Tac Toe</h1>
         <div id="mode">
             <button type="button" id="c_btw"></button>
         </div>
-    </dix>
+    </div>
+    <div class="msg-con hide">
+        <p id="msg">Winner</p>
+    </div>
     <div id="con">
         <div id="box">
-            <button class="sbox"></button>
-            <button class="sbox"></button>
+            <button class="sbox">X</button>
+            <button class="sbox">O</button>
             <button class="sbox"></button>
             <button class="sbox"></button>
             <button class="sbox"></button>
@@ -26,6 +29,7 @@
             <button class="sbox"></button>
         </div>
     </div>
+    <button id="rb">Reset</button>
 </body>
 <script src="tic-tac-toe.js"></script>
 </html>
