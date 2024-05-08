@@ -9,24 +9,26 @@ body {
 }
 
 .dark {
-    background-color: #6B705C;
-    color: azure;
+    background-color: #0B2545;
 }
 
 .dark #header {
-    background-color: #A5A58D;
+    background-color: #8DA9C4;
 }
 
 .dark #box {
-    background-color: #FFE8D6;
+    background-color: #EEF4ED;
 }
 
 .dark .sbox {
-    background-color: #D4AC94;
-    color: azure;
+    background-color: #134074;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 .dark #rb{
-    background-color: #6B705C;
+    background-color: #134074;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+}
+.dark #msg{
     color: azure;
 }
 
