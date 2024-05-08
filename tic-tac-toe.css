@@ -107,7 +107,10 @@ h1 {
 }
 
 .msg-con {
-    height: 25vmin;
+    height: 7vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hide {
