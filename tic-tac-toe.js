@@ -26,11 +26,17 @@ const res = () => {
 
 reset.addEventListener("click", res);
 
+const draw =()=>{
+    msg.innerText ="Oops ! -_- It is tie";
+    mc.classList.remove("hide");
+    disablebox();
+};
+
 const showW = (win) => {
     for (let b of moves) {
         b.disabled = true;
     }
-    msg.innerText = `Congratulation, Winner is ${win}`;
+    msg.innerText = `Congratulation !!!...Winner is ${win}`;
     msgcon.classList.remove("hide");
 }
 

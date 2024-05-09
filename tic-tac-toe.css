@@ -1,35 +1,39 @@
 body {
-    background-color: #86469C;
+    background-color: #fad2e1;
     margin: 0%;
     padding: 0%;
     height: 100vh;
     text-align: center;
     transition: background-color 0.5s ease, color 0.5s ease;
-    color: black;
+    color: #fff;
 }
 
 .dark {
-    background-color: #0B2545;
+    background-color: #fff;
 }
 
 .dark #header {
-    background-color: #8DA9C4;
+    background-color: #b4cded;
+    color: black;
 }
 
-.dark #box {
+/* .dark #box {
     background-color: #EEF4ED;
-}
+} */
 
 .dark .sbox {
-    background-color: #134074;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    background-color: #b4cded;
+    color: black;
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); */
 }
 .dark #rb{
     background-color: #134074;
-    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
 }
 .dark #msg{
-    color: azure;
+    color: black;
 }
 
 #c_btw {
@@ -53,7 +57,8 @@ body {
 }
 
 #header {
-    background-color: #BC7FCD;
+    background-color: #240046;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +73,7 @@ h1 {
 
 #con {
     margin: 1rem auto;
-    height: 70vh;
+    height: 65vh;
     width: 70vh;
     display: flex;
     justify-content: center;
@@ -76,7 +81,6 @@ h1 {
 }
 
 #box {
-    background-color: #FFCDEA;
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -87,23 +91,24 @@ h1 {
 }
 
 .sbox {
-    background-color: #FB9AD1;
+    background-color: #240046;  
+    color: #fff;
     font-size: 8vmin;
     height: 16vmin;
     width: 16vmin;
     border-radius: 1rem;
     border: 0;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    color: black;
+    box-shadow: 0 0 1rem rgba(168, 161, 161, 0.637);
 }
 
 #rb {
-    background-color: #FB9AD1;
+    background-color: #832161;
+    color: azure;
+    font-weight: 600;
     padding: 1rem;
-    font-size: 1.5vmin;
-    border-radius: 1rem;
+    font-size: 2vmin;
+    border-radius: 3px;
     border: 0;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 #msg {
@@ -115,6 +120,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .hide {
