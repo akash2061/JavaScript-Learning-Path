@@ -4,6 +4,7 @@ let msgcon = document.querySelector(".msg-con");
 let msg = document.querySelector("#msg");
 
 let turn = true;
+let count = 0;
 let win = [
     [0, 1, 2],
     [0, 3, 6],
@@ -17,6 +18,7 @@ let win = [
 
 const res = () => {
     turn = true;
+    count = 0;
     for (let b of moves) {
         b.disabled = false;
         b.innerText = "";
@@ -26,11 +28,7 @@ const res = () => {
 
 reset.addEventListener("click", res);
 
-const draw =()=>{
-    msg.innerText ="Oops ! -_- It is tie";
-    mc.classList.remove("hide");
-    disablebox();
-};
+
 
 const showW = (win) => {
     for (let b of moves) {
@@ -51,9 +49,21 @@ moves.forEach(move => {
             turn = true;
         }
         move.disabled = true;
-        checkwin();
+        count++;
+        let iswin = checkwin();
+        if(count === 9 && !iswin){
+            draw();
+        }
     });
 });
+
+const draw =()=>{
+    msg.innerText ="Oops ! -_- It is tie";
+    msgcon.classList.remove("hide");
+    for (let b of moves) {
+        b.disabled = true;
+    }
+};
 
 function checkwin() {
     for (let p of win) {
