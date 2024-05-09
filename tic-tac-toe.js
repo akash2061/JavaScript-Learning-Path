@@ -74,6 +74,7 @@ function checkwin() {
         if (p1 != "" && p2 != "" && p3 != "") {
             if (p1 === p2 && p2 === p3) {
                 showW(p1);
+                return true;
             }
         }
     }
