@@ -22,8 +22,13 @@ class Car {
     stop() {
         console.log("Stop");
     }
+    setBrand(brand) {
+        this.brand = brand;
+    }
 }
 
 let porsche = new Car();
+porsche.setBrand("Porsche");
 porsche.start();
 porsche.stop();
+console.log(porsche);
