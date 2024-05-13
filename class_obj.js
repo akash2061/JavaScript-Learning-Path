@@ -11,3 +11,19 @@ const field = {
 };
 
 Student.__proto__ = field;
+
+console.log(Student);
+console.log(Student.fieldName);
+
+class Car {
+    start() {
+        console.log("Start");
+    }
+    stop() {
+        console.log("Stop");
+    }
+}
+
+let porsche = new Car();
+porsche.start();
+porsche.stop();
