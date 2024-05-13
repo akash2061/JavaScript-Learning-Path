@@ -33,3 +33,5 @@ let porsche = new Car("Porsche");
 porsche.start();
 porsche.stop();
 console.log(porsche);
+let lotus = new Car();
+console.log(lotus);
