@@ -35,3 +35,10 @@ porsche.stop();
 console.log(porsche);
 let lotus = new Car();
 console.log(lotus);
+
+try {
+    console.log(name);
+    console.log(fieldName);
+} catch (err) {
+    console.log(err);
+}
