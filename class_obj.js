@@ -16,19 +16,20 @@ console.log(Student);
 console.log(Student.fieldName);
 
 class Car {
+    constructor(brand) {
+        console.log("It's a Car Constructor...");
+        this.brand = brand;
+    }
     start() {
         console.log("Start");
     }
     stop() {
         console.log("Stop");
     }
-    setBrand(brand) {
-        this.brand = brand;
-    }
 }
 
-let porsche = new Car();
-porsche.setBrand("Porsche");
+let porsche = new Car("Porsche");
+// porsche.setBrand();
 porsche.start();
 porsche.stop();
 console.log(porsche);
