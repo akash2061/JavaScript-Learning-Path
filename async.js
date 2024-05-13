@@ -19,7 +19,24 @@
 // getData(2);
 // getData(3);
 
-let promise = new Promise((resolve,reject)=>{
-    console.log("I am Promise.");
-    resolve("Error Occured");
+let getPromise = () =>{
+    return new Promise((resolve,reject)=>{
+        console.log("I am Promise.");
+        resolve("Success.");
+    });
+};
+let getPromiseReject = () =>{
+    return new Promise((resolve,reject)=>{
+        console.log("I am Promise.");
+        reject("Error Occured.");
+    });
+};
+let call = getPromise();
+let call2 = getPromiseReject();
+
+call.then((res)=>{
+    console.log(res);
+});
+call2.catch((err)=>{
+    console.log(err);
 });
