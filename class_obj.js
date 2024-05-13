@@ -6,3 +6,8 @@ const Student = {
     },
 };
 
+const field = {
+    fieldName: "Cybersecurity",
+};
+
+Student.__proto__ = field;
