@@ -60,5 +60,6 @@ async function getAPIData() {
     console.log("Getting Data - 4...");
     await api(4);
 }
-
 getAPIData();
+
+// IIFE
