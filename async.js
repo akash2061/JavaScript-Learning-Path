@@ -57,6 +57,8 @@ async function getAPIData() {
     await api(2);
     console.log("Getting Data - 3...");
     await api(3);
+    console.log("Getting Data - 4...");
+    await api(4);
 }
 
 getAPIData();
