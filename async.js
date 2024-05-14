@@ -62,7 +62,7 @@ async function getAPIData() {
 }
 getAPIData();
 
-// IIFE
+// IIFE => Instant Code Execution...
 (async function () {
     console.log("IIFE => Getting Data - 1...");
     await api(1);
