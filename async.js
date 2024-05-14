@@ -63,13 +63,13 @@ async function getAPIData() {
 getAPIData();
 
 // IIFE => Instant Code Execution...
-(async function () {
-    console.log("IIFE => Getting Data - 1...");
-    await api(1);
-    console.log("IIFE => Getting Data - 2...");
-    await api(2);
-    console.log("IIFE => Getting Data - 3...");
-    await api(3);
-    console.log("IIFE => Getting Data - 4...");
-    await api(4);
-})();
+// (async function () {
+//     console.log("IIFE => Getting Data - 1...");
+//     await api(1);
+//     console.log("IIFE => Getting Data - 2...");
+//     await api(2);
+//     console.log("IIFE => Getting Data - 3...");
+//     await api(3);
+//     console.log("IIFE => Getting Data - 4...");
+//     await api(4);
+// })();
