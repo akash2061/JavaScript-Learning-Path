@@ -19,14 +19,14 @@
 // getData(2);
 // getData(3);
 
-let getPromise = () =>{
-    return new Promise((resolve,reject)=>{
+let getPromise = () => {
+    return new Promise((resolve, reject) => {
         console.log("I am Promise.");
         resolve("Success.");
     });
 };
-let getPromiseReject = () =>{
-    return new Promise((resolve,reject)=>{
+let getPromiseReject = () => {
+    return new Promise((resolve, reject) => {
         console.log("I am Promise.");
         reject("Error Occured.");
     });
@@ -34,9 +34,29 @@ let getPromiseReject = () =>{
 let call = getPromise();
 let call2 = getPromiseReject();
 
-call.then((res)=>{
+call.then((res) => {
     console.log(res);
 });
-call2.catch((err)=>{
+call2.catch((err) => {
     console.log(err);
 });
+
+function api(i) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Async/Await - ",i);
+            resolve("Success.");
+        }, 1000);
+    });
+};
+
+async function getAPIData() {
+    console.log("Getting Data - 1...");
+    await api(1);
+    console.log("Getting Data - 2...");
+    await api(2);
+    console.log("Getting Data - 3...");
+    await api(3);
+}
+
+getAPIData();
