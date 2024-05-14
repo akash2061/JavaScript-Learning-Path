@@ -46,11 +46,12 @@ function api(i) {
         setTimeout(() => {
             console.log("Async/Await -", i);
             resolve("Success.");
-        }, 1000);
+        }, 2000);
     });
 };
 
 async function getAPIData() {
+    await api(`Foo... ${api()}`);
     console.log("Getting Data - 1...");
     await api(1);
     console.log("Getting Data - 2...");
