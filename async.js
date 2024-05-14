@@ -44,7 +44,7 @@ call2.catch((err) => {
 function api(i) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("Async/Await - ",i);
+            console.log("Async/Await -",i);
             resolve("Success.");
         }, 1000);
     });
