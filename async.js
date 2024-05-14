@@ -44,7 +44,7 @@ call2.catch((err) => {
 function api(i) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("Async/Await -",i);
+            console.log("Async/Await -", i);
             resolve("Success.");
         }, 1000);
     });
@@ -63,7 +63,7 @@ async function getAPIData() {
 getAPIData();
 
 // IIFE
-async function getAPIData() {
+(async function () {
     console.log("Getting Data - 1...");
     await api(1);
     console.log("Getting Data - 2...");
@@ -72,4 +72,4 @@ async function getAPIData() {
     await api(3);
     console.log("Getting Data - 4...");
     await api(4);
-}
+})();
