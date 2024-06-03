@@ -59,3 +59,31 @@ modebtn.addEventListener("click", () => {
         body.classList.remove("dark");
     }
 });
+
+let newModebtn = document.querySelector(".button");
+newModebtn.addEventListener("click", () => {
+    if (cmode === "light") {
+        cmode = "dark";
+        body.classList.add("dark");
+        body.classList.remove("light");
+    } else {
+        cmode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+    }
+});
+
+let code = document.querySelector(".button-1");
+code.addEventListener("click", code_alert);
+function code_alert() {
+    alert(`
+    HTML:
+    <div style="display: flex; justify-content: center; align-items: center; width: auto; ">
+        <button class="button-1">
+            <span class="bracket left">❴</span>
+            <span class="text">Code</span>
+            <span class="bracket right">❵</span>
+        </button>
+    </div>
+    `);
+}
